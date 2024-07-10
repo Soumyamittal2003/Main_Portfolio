@@ -29,11 +29,11 @@ body{
     color: var(--text-color);
 }
 
-section{
+ section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 
-}
+} 
 
 .header{
     position: fixed;
@@ -268,6 +268,51 @@ span{
     font-size: 2rem;
     color: var(--snd-bg-color);
 }
+
+/* contact section design */
+
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.heading1{
+    text-align: left;
+    font-size: 4.5rem;
+    line-height: 1.2;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    font-size: 15px;
+}
+.contact-left p i{
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+
+.contact-right form{
+    width: 100%;
+
+}
+form input,form textarea{
+    width: 100%;
+    border:0;
+    outline: none;
+    background-color: #262B40;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
 
 /* footer section design */
 
