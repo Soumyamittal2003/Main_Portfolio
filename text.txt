@@ -1,2 +1,7 @@
 about :
 
+<div class="layer">
+                        <h3>e-Krishak</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quasi accusantium laborum odio perferendis animi sunt aliquid nemo unde officia velit, laudantium asperiores! Quasi error libero repellendus fugit ipsum assumenda!</p>
+                        <a href="https://github.com/Soumyamittal2003/e-Krishak"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>

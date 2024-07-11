@@ -228,75 +228,64 @@ span{
 .mywork{
     background: var(--snd-bg-color);
 }
-.mywork h2{
-    margin-bottom: 4rem;
-}
-.mywork-container{
+.work-list{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    gap: 2.5rem;
-
+    grid-template-columns: repeat(auto-fit,minmax(50px,2fr));
+    grid-gap: 25px;
+    margin-top: 30px;
 }
-
-.mywork-container .mywork-box{
+.work{
+    
+    border-radius: 10px;
     position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    transition: transform 0.5s;
+    border-radius: 10px;
+    display: block;
+}
+.layer{
+    width: 100%;
+    height:0;
+    background: linear-gradient(rgba(0,0,0,0.6),#01192d);
+    border-radius:10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     overflow: hidden;
     display: flex;
-}
-
-.mywork-box img{
-    width: 100%;
-    transition: .5s ease;
-    opacity: 0.7;
-}
-
-.mywork-box:hover img{
-    transition: scale(1.1);
-}
-
-.mywork-box .mywork-layer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.1),var(--main-color));
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    padding: 0 40px;
     text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: .5s ease;
+    font-size: 18px;
+    transition: height 0.5s;
 }
-.mywork-box:hover .mywork-layer{
-    transform: translateY(0);
-}
-.mywork-layer h4{
-    font-size: 3rem;
-}
-.mywork-layer p{
-    font-size: 1.6rem;
-    margin: .3rem 0 1rem;
-}
+.layer h3{
+    font-weight: 600;
+    margin-bottom: 20px;
 
-.mywork-layer a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: var(--text-color);
+}
+.layer a{
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    text-align: center;
 }
-
-.mywork-layer a i{
-    font-size: 2rem;
-    color: var(--snd-bg-color);
+.worK:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
 }
 
 /* contact section design */
@@ -486,8 +475,5 @@ form input,form textarea{
     html{
         font-size: 50%;
     }
-    .contact form .input-box input{
-
-    }
-
+    
  }

@@ -1,6 +1,7 @@
 let menuIcon =document.querySelector('#menu-icon');
 let navbar =document.querySelector('.navbar');
 
+//about section function
 var tablinks =document.getElementsByClassName("tab-links");
 var tabcontents =document.getElementsByClassName("tab-contents");
 
