@@ -164,34 +164,64 @@ span{
 
 /* About section design */
 
-.about{
+#about{
+    
+    color: #ababab;
+    
+}
+.row{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    background: var(--snd-bg-color);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.tab-title{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
 }
 
-.about-img img{
-    width: 35vh;
+.tab-links::after{
+   content: '';
+   width: 0;
+   height: 3px;
+   background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    
 }
-.heading{
-    text-align: center;
-    font-size: 4.5rem;
+.tab-links.active-link::after{
+    width: 50%;
 }
 
-.about-content h2{
-    text-align: left;
-    line-height: 1.2;
+.tab-content ul li{
+    list-style: none;
+    margin: 10px 0;
 }
-.about-content h3{
-    font-size: 2.6rem;
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
 }
 
-.about-content p{
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-}
 
 /* my work section design */
 
@@ -276,15 +306,19 @@ span{
     font-weight: 600;
     color: #fff;
 }
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+
 .heading1{
     text-align: left;
     font-size: 4.5rem;
     line-height: 1.2;
+}
+
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 65%;
 }
 
 .contact-left p{

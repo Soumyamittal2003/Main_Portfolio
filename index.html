@@ -28,7 +28,7 @@
     <!--Home Section Design-->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hi,Myself</h3>
+            <h3>Hi, Myself</h3>
             <h1>Soumya Mittal</h1>
             <h3>And I'm a <span>Software Developer</span></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ea ad accusamus reiciendis quis, quibusdam blanditiis vel dolorum, omnis ex at architecto odit dolore labore animi repellendus quia. Explicabo, nostrum.</p>
@@ -40,27 +40,54 @@
             </div>
             <a href="asserts\Resume_Soumya.pdf" download class="btn">Download CV</a>
         </div>
-        <div class="home-img">
-            <img src="" alt="">
-        </div>
+        
     </section>
 
      <!--About Section Design-->
-     <section class="about" id="about">
-        <div class="about-img">
-            <img src="" alt="">
-        </div>
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Software Developer</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae perferendis dicta, provident sequi quod rerum culpa corporis aperiam accusantium temporibus numquam, consequatur neque optio reprehenderit atque, qui earum impedit esse!</p>
-            <a href="#" class="btn">Read More</a>
+     <section>
+        <div id="about"></div>
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="asserts/profile-pic.png">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="heading1">About <span>Me</span></h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus commodi assumenda laboriosam quasi suscipit voluptatibus eligendi adipisci iure similique dolore, vel neque ipsa eveniet sapiente quaerat dolores omnis amet doloribus.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('achivements')">Achivements</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Deploment</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>IBM</span><br>project intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>12th</span><br>cbse</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achivements">
+                        <ul>
+                            <li><span>inspire award</span><br>raipur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
      </section>
 
      <!-- My Work Design-->
      <section class="mywork" id="mywork">
-        <h2 class="heading">Latest <span>Projects</span></h2>
+        <h2 class="heading1">Latest <span>Projects</span></h2>
 
         <div class="mywork-container">
             <div class="mywork-box">
