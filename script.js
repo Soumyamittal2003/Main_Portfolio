@@ -60,12 +60,23 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content,heading',{origin:'top'});
+ScrollReveal().reveal('.home-content,heading,.about-col-2',{origin:'top'});
 
-ScrollReveal().reveal('.home-img,.mywork-box',{origin:'buttom'});
+ScrollReveal().reveal('.work',{origin:'buttom'});
 
-ScrollReveal().reveal('.home-content h1, .about-img',{origin:'left'});
+ScrollReveal().reveal('.home-content h1, .about-col-1,.work,.contact-left',{origin:'left'});
 
-ScrollReveal().reveal('.home-content p,.about-content',{origin:'right'});
+ScrollReveal().reveal('.home-content p,.about-content,.heading1,.contact-right',{origin:'right'});
 
 
+/* Typed */
+const typed = new Typed('.multiple-text',{
+    strings :['Software Developer','Data Scientist','And always a Learner'],
+    typeSpeed: 70,
+    backSpeed:70,
+    backDelay:100,
+    loop: true,
+})
+
+
+/* emailjs */

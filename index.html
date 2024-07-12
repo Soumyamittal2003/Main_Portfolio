@@ -7,6 +7,18 @@
     <!-- Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="script2.js" type="text/javascript"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "pEoJOlFoeAp18QP2h",
+        });
+        })();
+    </script>
 
     <title>Soumya's Portfolio</title>
 </head>
@@ -31,7 +43,7 @@
         <div class="home-content">
             <h3>Hi, Myself</h3>
             <h1>Soumya Mittal</h1>
-            <h3>And I'm a <span>Software Developer</span></h3>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
             <p>I am a Full Stack Developer and Data Science Engineer having the Tech enthusiast with a passion for development.I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving.</p>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/soumya-mittal/"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -152,11 +164,11 @@
                     </div>
                     <div class="contact-right">
                         <form >
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" id="message" placeholder="Your Message"></textarea>
 
-                            <button type="submit" class="btn">Submit</button>
+                            <button type="submit" class="btn" onclick="sendMail()">Submit</button>
                         </form>
                     </div>
                 
@@ -175,8 +187,10 @@
         
 
      </footer>
-    
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
+    
+    
 </body>
 </html>
