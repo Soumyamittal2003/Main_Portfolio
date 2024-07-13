@@ -56,8 +56,8 @@ window.onscroll =() =>{
 
 ScrollReveal({
     distance: '80px',
-    duration: 2000,
-    delay: 200
+    duration: 1500,
+    delay: 100
 });
 
 ScrollReveal().reveal('.home-content,heading,.about-col-2',{origin:'top'});
@@ -89,9 +89,7 @@ function fun(){
       from_name : document.getElementById("name").value,
       from_email : document.getElementById("email").value,
       message : document.getElementById("message").value
-  }
-               
-    
+  }  
   emailjs.send  ('service_zwqd31h','template_eviw7p8',params)
                 
   .then(() => {

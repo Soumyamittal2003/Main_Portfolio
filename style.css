@@ -164,7 +164,7 @@ span{
 #about{
     
     color: #ababab;
-    
+    padding-top: 5rem;
 }
 .row{
     display: flex;
@@ -527,7 +527,7 @@ form input,form textarea{
     }
     section{
         min-height: 100vh;
-        padding: 15rem 9% 2rem;
+        padding: 10rem 9% 4rem; 
     
     } 
     .tab-links{
