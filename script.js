@@ -37,7 +37,7 @@ window.onscroll =() =>{
         if(top >= offset && top < offset + heigth){
             navlinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('header nav a[herf*=' + id + ']').classList.add('active');
+                //document.querySelector('header nav a[herf*=' + id + ']').classList.add('active');
 
             });
 
@@ -80,3 +80,27 @@ const typed = new Typed('.multiple-text',{
 
 
 /* emailjs */
+
+function fun(){
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+   
+    const params =  {
+      from_name : document.getElementById("name").value,
+      from_email : document.getElementById("email").value,
+      message : document.getElementById("message").value
+  }
+               
+    
+  emailjs.send  ('service_zwqd31h','template_eviw7p8',params)
+                
+  .then(() => {
+      alert("Thank you. I will get back to you as soon as possible.");
+      document.getElementById('contactForm').reset();
+    },
+  (error) => {
+      console.error(error);
+      alert("Ahh, something went wrong. Please try again.");
+      }
+  )
+  })}
